@@ -1,0 +1,27 @@
+{
+  "name": "catvsdog-resultdatebackend",
+  "version": "1.0.0",
+  "description": "A backend application for managing result by date",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ETIBER/catvsdog-resultDateBackend.git"
+  },
+  "author": "ETBE",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ETIBER/catvsdog-resultDateBackend/issues"
+  },
+  "homepage": "https://github.com/ETIBER/catvsdog-resultDateBackend#readme",
+  "dependencies": {
+    "eslint": "^4.17.0",
+    "hapi": "^17.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1"
+  }
+}

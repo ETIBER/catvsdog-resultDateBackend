@@ -1,0 +1,19 @@
+version: '2'
+services:
+  resultDate-api:
+    image: node:9-alpine
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - "8080:8080"
+    command: "npm start"
+  db:
+     image: kiasaki/alpine-postgres:9.5
+     ports:
+       - 5432:5432
+     environment:
+       - POSTGRES_USER=admin
+       - POSTGRES_PASSWORD=admin
